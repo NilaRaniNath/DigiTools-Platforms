@@ -22,7 +22,8 @@ const productPromise =getProducts()
 
 function App() {
    const [activeTab, setActiveTab ] =useState("product")
-  console.log(activeTab)
+  const [carts, setCarts] =useState([])
+
   return (
     
       <>
@@ -38,11 +39,11 @@ function App() {
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart" onClick={() => setActiveTab("Cart")} />
 </div>
 
-    {activeTab === "model" && <Suspense fallback=<span className="loading loading-infinity loading-xl"></span>>
-        <Products productPromise={productPromise} ></Products>
+    {activeTab === "product" && <Suspense fallback= <span className="loading loading-infinity loading-xl"></span>>
+        <Products productPromise={productPromise}  carts={carts} setCarts={setCarts} ></Products>
     </Suspense>}
 
-    {activeTab === "cart" && <Cart></Cart>}
+    {activeTab === "Cart" && <Cart carts={carts}></Cart>}
 
       <Getstarted></Getstarted>
       <Cards></Cards>

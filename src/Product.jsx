@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-const Product = ({product}) => {
+const Product = ({product,carts, setCarts}) => {
     const [isBuy, setIsBuy] = useState(false)
     const handleBuyNow =() => {
         setIsBuy(true)
+        setCarts([...carts,product])
     }
     return (
         <div className='shadow-lg rounded-lg border'>
