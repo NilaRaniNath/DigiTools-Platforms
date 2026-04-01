@@ -43,7 +43,7 @@ function App() {
         <Products productPromise={productPromise}  carts={carts} setCarts={setCarts} ></Products>
     </Suspense>}
 
-    {activeTab === "Cart" && <Cart carts={carts}></Cart>}
+    {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
 
       <Getstarted></Getstarted>
       <Cards></Cards>
