@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "Mo",
+    "tag": "Best Seller",
+    "tagType": "warning",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon":"https:cdn-icons-png.flaticon.com/512/2593/2593549.png"
+  },
+  {
+    "id": 2,
+    "name": "SEO Optimizer",
+    "description": "Boost your website rankings with AI-driven keyword analysis and site audits.",
+    "price": 49,
+    "period": "Mo",
+    "tag": "New",
+    "tagType": "success",
+    "features": [
+      "Real-time rank tracking",
+      "Competitor analysis",
+      "Backlink checker"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png"
+  },
+  {
+    "id": 3,
+    "name": "Graphic Genius",
+    "description": "Create stunning visuals and social media posts using pre-built AI design assets.",
+    "price": 19,
+    "period": "Mo",
+    "tag": "Popular",
+    "tagType": "primary",
+    "features": [
+      "1000+ Design elements",
+      "One-click background removal",
+      "Commercial license"
+    ],
+    "icon":"https://cdn-icons-png.flaticon.com/512/3342/3342176.png"
+  },
+  {
+    "id": 4,
+    "name": "Code Assistant",
+    "description": "Debug and write clean code faster with our specialized developer AI agent.",
+    "price": 39,
+    "period": "Mo",
+    "tag": "Top Rated",
+    "tagType": "info",
+    "features": [
+      "Supports 20+ languages",
+      "VS Code integration",
+      "Secure code analysis"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/11520/11520853.png"
+  },
+  {
+    "id": 5,
+    "name": "Video AI Lab",
+    "description": "Turn your text scripts into engaging videos with realistic AI avatars and voices.",
+    "price": 89,
+    "period": "Mo",
+    "tag": "Hot",
+    "tagType": "error",
+    "features": [
+      "1080p Video exports",
+      "Custom AI voiceovers",
+      "Auto-subtitle generation"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/942/942748.png"
+  },
+  {
+    "id": 6,
+    "name": "Startup Bundle",
+    "description": "The ultimate package for new businesses including all essential DigiTools.",
+    "price": 199,
+    "period": "Yr",
+    "tag": "Best Value",
+    "tagType": "warning",
+    "features": [
+      "All Pro features included",
+      "Up to 5 team members",
+      "Priority 24/7 support"
+    ],
+    "icon":"https://cdn-icons-png.flaticon.com/512/1968/1968641.png"
+  },
+  {
+    "id": 7,
+    "name": "Social Media Bot",
+    "description": "Automate your social presence with AI-scheduled posts and smart engagement.",
+    "price": 15,
+    "period": "Mo",
+    "tag": "Trending",
+    "tagType": "success",
+    "features": [
+      "Multi-platform support",
+      "Auto-reply features",
+      "Growth analytics"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1968/1968666.png"
+  },
+  {
+    "id": 8,
+    "name": "Data Analyst AI",
+    "description": "Upload your raw data and get professional visualization and insights instantly.",
+    "price": 55,
+    "period": "Mo",
+    "tag": "Enterprise",
+    "tagType": "neutral",
+    "features": [
+      "Advanced CSV/Excel support",
+      "Custom chart builder",
+      "Export to PDF/PPT"
+    ],
+    "icon":"https://cdn-icons-png.flaticon.com/512/4222/4222023.png"
+  }
+]

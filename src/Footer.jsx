@@ -1,4 +1,7 @@
 import React from 'react';
+import instagramImg from "./assets/instagram.png"
+import fackbookImg from "./assets/facebook.png"
+import twitterImg from "./assets/twitter.png"
 
 const Footer = () => {
     return (
@@ -9,7 +12,7 @@ const Footer = () => {
       
       <div className="lg:col-span-2">
         <h2 className="text-3xl font-bold text-white mb-6">DigiTools</h2>
-        <p class="max-w-xs leading-relaxed text-sm">
+        <p className="max-w-xs leading-relaxed text-sm">
           Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
         </p>
       </div>
@@ -45,17 +48,17 @@ const Footer = () => {
 
         <h3 className="text-white font-bold mb-4">Social Links</h3>
         <div className="flex gap-4">
-         <img src="../public/instagram.png" alt="" />
-         <img src="../public/facebook.png" alt="" />
+         <img src={instagramImg} alt="" />
+         <img src={fackbookImg} alt="" />
           
-           <img src="../public/twitter.png" alt="" />
+           <img src={twitterImg} alt="" />
         </div>
       </div>
     </div>
 
     <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
       <p>© 2026 Digitools. All rights reserved.</p>
-      <div class="flex gap-6 mt-4 md:mt-0">
+      <div className="flex gap-6 mt-4 md:mt-0">
         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
         <a href="#" className="hover:text-white transition-colors">Cookies</a>
