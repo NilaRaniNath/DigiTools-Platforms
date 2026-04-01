@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const Product = ({product,carts, setCarts}) => {
+
+const Product = ({product,carts, setCarts,}) => {
     const [isBuy, setIsBuy] = useState(false)
     const handleBuyNow =() => {
         setIsBuy(true)
         setCarts([...carts,product])
+        toast.success("Item added to cart!")
     }
     return (
         <div className='shadow-lg rounded-lg border'>

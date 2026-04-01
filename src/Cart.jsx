@@ -1,25 +1,30 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+
 
 const Cart = ({ carts, setCarts }) => {
     const totalPrice = carts.reduce((sum, item )=> sum + item.price, 0)
     
 const handlePayment =() => {
     setCarts([]);
+      toast.success("Payment Successful!")
 };
 const handleDelete = (item) => {
     const fillterArray = carts. filter (c => c.id !== item.id);
-    setCarts(fillterArray)
+    setCarts(fillterArray);
+      toast.success("Item Deleted")
 }
 
 
 
     return (
-        <div className='py-10 container mx-auto px-4'>
+        <div className='py-10 max-w-7xl  container mx-auto px-4'>
             <h1 className='text-2xl font-bold mb-6'>Carts</h1>
             {
                 carts.length === 0 ? <p className='text-center font-semibold p-5 bg-gray-400'>Cart is Empty</p> : 
                 <>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+               <div className='max-w-7xl mx-auto '>
+                 <div className='grid grid-cols-1 md:grid-cols-1 gap-6 '>
                 {
                    
                     carts && carts.map(item => (
@@ -57,6 +62,7 @@ const handleDelete = (item) => {
                 <div>${totalPrice}</div>
             </div>
             <button onClick={handlePayment} className='btn w-full bg-violet-700 text-white text-xl rounded-lg mt-5'>Proceed To Checkout</button>
+               </div>
                 </>
             }
             

@@ -10,6 +10,7 @@ import Footer from './Footer'
 import Products from './Products'
 import { Suspense, useState } from 'react'
 import Cart from './Cart'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -49,6 +50,7 @@ function App() {
       <Cards></Cards>
       <Workflow></Workflow>
       <Footer></Footer>
+      <ToastContainer/>
       </>
   )
 }
