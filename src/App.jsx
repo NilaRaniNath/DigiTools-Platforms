@@ -36,7 +36,7 @@ function App() {
       <div className="tabs tabs-box justify-center bg-transparent">
  
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" onClick={() => setActiveTab("product")}defaultChecked />
-  <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart" onClick={() => setActiveTab("Cart")} />
+  <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart(${carts.length})`} onClick={() => setActiveTab("Cart")} />
 </div>
 
     {activeTab === "product" && <Suspense fallback= <span className="loading loading-infinity loading-xl"></span>>

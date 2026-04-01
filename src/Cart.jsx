@@ -4,8 +4,15 @@ const Cart = ({ carts, setCarts }) => {
     const totalPrice = carts.reduce((sum, item )=> sum + item.price, 0)
     
 const handlePayment =() => {
-    setCarts([])
+    setCarts([]);
+};
+const handleDelete = (item) => {
+    const fillterArray = carts. filter (c => c.id !== item.id);
+    setCarts(fillterArray)
 }
+
+
+
     return (
         <div className='py-10 container mx-auto px-4'>
             <h1 className='text-2xl font-bold mb-6'>Carts</h1>
@@ -19,6 +26,10 @@ const handlePayment =() => {
         
 
                         <div key={item.id} className="border p-4 rounded-xl shadow-sm bg-white relative flex">
+
+                             <p onClick={()=>handleDelete(item)} className="absolute right-2 bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full font-bold"> Remove
+                                 </p>
+                        
                             
 
                             <div className="flex justify-center items-center gap-2">
