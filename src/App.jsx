@@ -23,12 +23,13 @@ const productPromise =getProducts()
 
 function App() {
    const [activeTab, setActiveTab ] =useState("product")
-  const [carts, setCarts] =useState([])
+  const [carts, setCarts] =useState([]);
+  // const [count, setCount] = useState([]);
 
   return (
     
       <>
-      <Navbar></Navbar>
+      <Navbar count={carts.length} ></Navbar>
       <Banner></Banner>
       <Rating></Rating>
 
