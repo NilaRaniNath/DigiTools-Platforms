@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Cart = ({ carts }) => {
-    // ডাটা ঠিকঠাক আসছে কি না তা চেক করার জন্য
-    console.log(carts);
+    const totalPrice = carts.reduce((sum, item )=> sum + item.price, 0)
+    
 
     return (
         <div className='py-10 container mx-auto px-4'>
@@ -35,6 +35,10 @@ const Cart = ({ carts }) => {
                         </div>
                     ))
                 }
+            </div>
+            <div className='flex justify-between bg-black text-white p-5 mt-5 rounded-full text-2xl font-bold'>
+                <div>Total</div>
+                <div>{totalPrice}</div>
             </div>
         </div>
     );
